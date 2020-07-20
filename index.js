@@ -3,7 +3,8 @@ const app = express()
 const port = 3000
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://choyunhui:bp1234@boilerplate.6dflk.mongodb.net/<dbname>?retryWrites=true&w=majority',{
+//아이디,비밀번호라고 적혀있는곳에 넣으면 됨 (보안상 가림)
+mongoose.connect('mongodb+srv://아이디:비밀번호@boilerplate.6dflk.mongodb.net/<dbname>?retryWrites=true&w=majority',{
     useNewUrlParser:true, useUnifiedTopology:true, useCreateIndex:true, useFindAndModify:false
 }).then(()=> console.log('MongoDB Connected =...'))
   .catch(err=>console.log(err))
